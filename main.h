@@ -6,7 +6,21 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/wait.h>
 #include <fcntl.h>
+
+#define MAX_ARGS 10
+
+extern char **environ;
+
+/**
+ * find_command_path - Find the path of a command.
+ * @command: The command to find the path for.
+ *
+ * Return: The path of the command, or NULL if not found.
+ */
+char *find_command_path(char *command);
+
 /*
 *string functions
 */
