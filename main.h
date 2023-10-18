@@ -21,15 +21,5 @@ extern char **environ;
  */
 char *find_command_path(char *command);
 
-/*
-*string functions
-*/
-int _atoi(char *s);
-int _strlen(char *s);
-int _strcmp(char *s1, char *s2);
-char *_strpbrk(char *s, char *accept);
-unsigned int _strspn(char *s, char *accept);
-char *reverse_str(char *s);
-char *_strdup(char *str);
 
 #endif
