@@ -152,7 +152,9 @@ void fork_cmd(info_t *inf)
 		{
 			inf->status = WEXITSTATUS(inf->status);
 			if (inf->status == 126)
+			{
 				print_error(inf, "Permission denied\n");
+			}
 		}
 	}
 }
