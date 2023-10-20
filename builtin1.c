@@ -106,9 +106,13 @@ int _myalias(info_t *inf)
 	{
 		p = _strchr(inf->argv[i], '=');
 		if (p)
+		{
 			set_alias(inf, inf->argv[i]);
+		}
 		else
+		{
 			print_alias(node_starts_with(inf->alias, inf->argv[i], '='));
+		}
 	}
 
 	return (0);
